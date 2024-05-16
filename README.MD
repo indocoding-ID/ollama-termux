@@ -8,8 +8,8 @@ pkg update \
 ```
 - kemudian install ollama cukup jalankan command berikut
 ``` shell
-git clone https://github.com/indocoding-ID/ollama-termux.git ollama \
-& cd ollama \
+git clone https://github.com/indocoding-ID/ollama-termux.git \
+& cd ollama-termux \
 & chmod +x setup.sh \
 & bash setup.sh
 ```
