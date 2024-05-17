@@ -1,4 +1,4 @@
-## langka install ollama di android
+## langkah install ollama di android
 - pastikan anda sudah menginstall termux di android anda
 - jalankan perintah berikut untuk install git
 ``` shell
