@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # update and upgrade package
-pkg update
-pkg upgrade 
+pkg update -y
+pkg upgrade -y
 
 # install cmake dan golang
 pkg install git cmake golang -y
@@ -30,14 +30,14 @@ rm -r ~/go
 cp ~/ollama/ollama /data/data/com.termux/files/usr/bin/
 
 # create started
-cat << EOF > /data/data/com.termux/files/usr/startollama
+cat << EOF > /data/data/com.termux/files/usr/bin/startollama
 #!/bin/sh
 export OLLAMA_HOST=0.0.0.0:11434
 export OLLAMA_ORIGINS='*'
 nohup ollama serve > /dev/null 2>&1&
 EOF
 
-chmod +x /data/data/com.termux/files/usr/startollama
+chmod +x /data/data/com.termux/files/usr/bin/startollama
 
 echo "Sekarang anda bisa menjalankan ollama dengan startollama dan cek ollama dengan ollama list";
 echo "install module ollama yang anda inginkan"
