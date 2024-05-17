@@ -19,7 +19,7 @@ cd ollama
 # generate ollama
 go generate ./...
 
-# bual ollama
+# build ollama
 go build .
 
 # clean up go
