@@ -15,4 +15,4 @@ git clone https://github.com/indocoding-ID/ollama-termux.git \
 ```
 
 kamu bisa melihat model di website resmi ollama 
-(ollama)[https://ollama.com/]
+[https://ollama.com/](ollama)
