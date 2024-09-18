@@ -13,3 +13,6 @@ git clone https://github.com/indocoding-ID/ollama-termux.git \
 ; bash setup.sh
 
 ```
+
+kamu bisa melihat model di website resmi ollama 
+(ollama)[https://ollama.com/]
