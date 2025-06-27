@@ -4,28 +4,10 @@
 pkg update -y
 pkg upgrade -y
 
-# install cmake dan golang
-pkg install git cmake build-essential golang -y
-
-# goto root
-cd ~/
-
-#clone ollama
-git clone --depth 1 https://github.com/ollama/ollama.git
-
-# go to directory ollama
-cd ollama
-
-# generate ollama
-go generate ./...
-
-# build ollama
-go build .
-
-# clean up go
-chmod -R 700 ~/go
-rm -r ~/go
-
+# install tur repo
+pkg install tur-repo -y
+# install ollama
+pkg install ollama -y
 # set up bin ollama
 cp ~/ollama/ollama $PREFIX/bin/
 
